@@ -11,6 +11,7 @@
 		D0E4F4E928A5FF3600B49FEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4F4E828A5FF3600B49FEF /* ContentView.swift */; };
 		D0E4F4EB28A5FF3700B49FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4EA28A5FF3700B49FEF /* Assets.xcassets */; };
 		D0E4F4EF28A5FF3700B49FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4EE28A5FF3700B49FEF /* Preview Assets.xcassets */; };
+		D0E4F4F828A69F3600B49FEF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D0E4F4F728A69F3600B49FEF /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D0E4F4EA28A5FF3700B49FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0E4F4EC28A5FF3700B49FEF /* Animated_Tabs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Animated_Tabs.entitlements; sourceTree = "<group>"; };
 		D0E4F4EE28A5FF3700B49FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0E4F4F528A69EB700B49FEF /* Animated-Tabs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Animated-Tabs-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E4F4F828A69F3600B49FEF /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +55,7 @@
 		D0E4F4E528A5FF3600B49FEF /* Animated Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				D0E4F4F528A69EB700B49FEF /* Animated-Tabs-Info.plist */,
 				D0E4F4E628A5FF3600B49FEF /* Animated_TabsApp.swift */,
 				D0E4F4E828A5FF3600B49FEF /* ContentView.swift */,
 				D0E4F4EA28A5FF3700B49FEF /* Assets.xcassets */,
@@ -85,6 +89,9 @@
 			dependencies = (
 			);
 			name = "Animated Tabs";
+			packageProductDependencies = (
+				D0E4F4F728A69F3600B49FEF /* Lottie */,
+			);
 			productName = "Animated Tabs";
 			productReference = D0E4F4E328A5FF3600B49FEF /* Animated Tabs.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +120,9 @@
 				Base,
 			);
 			mainGroup = D0E4F4DA28A5FF3600B49FEF;
+			packageReferences = (
+				D0E4F4F628A69F3600B49FEF /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = D0E4F4E428A5FF3600B49FEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,6 +279,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Animated-Tabs-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -305,6 +316,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Animated-Tabs-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -350,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0E4F4F628A69F3600B49FEF /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0E4F4F728A69F3600B49FEF /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0E4F4F628A69F3600B49FEF /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0E4F4DB28A5FF3600B49FEF /* Project object */;
 }
