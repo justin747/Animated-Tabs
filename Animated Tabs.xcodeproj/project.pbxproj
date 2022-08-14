@@ -12,6 +12,11 @@
 		D0E4F4EB28A5FF3700B49FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4EA28A5FF3700B49FEF /* Assets.xcassets */; };
 		D0E4F4EF28A5FF3700B49FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4EE28A5FF3700B49FEF /* Preview Assets.xcassets */; };
 		D0E4F4F828A69F3600B49FEF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D0E4F4F728A69F3600B49FEF /* Lottie */; };
+		D0E4F4FE28A8B4FA00B49FEF /* Chat.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4F928A8B4FA00B49FEF /* Chat.json */; };
+		D0E4F4FF28A8B4FA00B49FEF /* Account.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FA28A8B4FA00B49FEF /* Account.json */; };
+		D0E4F50028A8B4FA00B49FEF /* Notification.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FB28A8B4FA00B49FEF /* Notification.json */; };
+		D0E4F50128A8B4FA00B49FEF /* Saved.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FC28A8B4FA00B49FEF /* Saved.json */; };
+		D0E4F50228A8B4FA00B49FEF /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FD28A8B4FA00B49FEF /* Home.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		D0E4F4EC28A5FF3700B49FEF /* Animated_Tabs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Animated_Tabs.entitlements; sourceTree = "<group>"; };
 		D0E4F4EE28A5FF3700B49FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0E4F4F528A69EB700B49FEF /* Animated-Tabs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Animated-Tabs-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D0E4F4F928A8B4FA00B49FEF /* Chat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chat.json; sourceTree = "<group>"; };
+		D0E4F4FA28A8B4FA00B49FEF /* Account.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Account.json; sourceTree = "<group>"; };
+		D0E4F4FB28A8B4FA00B49FEF /* Notification.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Notification.json; sourceTree = "<group>"; };
+		D0E4F4FC28A8B4FA00B49FEF /* Saved.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Saved.json; sourceTree = "<group>"; };
+		D0E4F4FD28A8B4FA00B49FEF /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 		D0E4F4DA28A5FF3600B49FEF = {
 			isa = PBXGroup;
 			children = (
+				D0E4F50328A8B51C00B49FEF /* Tab Icons */,
 				D0E4F4E528A5FF3600B49FEF /* Animated Tabs */,
 				D0E4F4E428A5FF3600B49FEF /* Products */,
 			);
@@ -71,6 +82,18 @@
 				D0E4F4EE28A5FF3700B49FEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0E4F50328A8B51C00B49FEF /* Tab Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D0E4F4F928A8B4FA00B49FEF /* Chat.json */,
+				D0E4F4FD28A8B4FA00B49FEF /* Home.json */,
+				D0E4F4FB28A8B4FA00B49FEF /* Notification.json */,
+				D0E4F4FC28A8B4FA00B49FEF /* Saved.json */,
+				D0E4F4FA28A8B4FA00B49FEF /* Account.json */,
+			);
+			path = "Tab Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E4F4FE28A8B4FA00B49FEF /* Chat.json in Resources */,
+				D0E4F4FF28A8B4FA00B49FEF /* Account.json in Resources */,
+				D0E4F50028A8B4FA00B49FEF /* Notification.json in Resources */,
+				D0E4F50128A8B4FA00B49FEF /* Saved.json in Resources */,
+				D0E4F50228A8B4FA00B49FEF /* Home.json in Resources */,
 				D0E4F4EF28A5FF3700B49FEF /* Preview Assets.xcassets in Resources */,
 				D0E4F4EB28A5FF3700B49FEF /* Assets.xcassets in Resources */,
 			);
