@@ -66,6 +66,9 @@
 		D0E4F4E528A5FF3600B49FEF /* Animated Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				D0E4F50628AB51B100B49FEF /* View */,
+				D0E4F50528AB51AB00B49FEF /* ViewModel */,
+				D0E4F50428AB51A600B49FEF /* Model */,
 				D0E4F4F528A69EB700B49FEF /* Animated-Tabs-Info.plist */,
 				D0E4F4E628A5FF3600B49FEF /* Animated_TabsApp.swift */,
 				D0E4F4E828A5FF3600B49FEF /* ContentView.swift */,
@@ -94,6 +97,27 @@
 				D0E4F4FA28A8B4FA00B49FEF /* Account.json */,
 			);
 			path = "Tab Icons";
+			sourceTree = "<group>";
+		};
+		D0E4F50428AB51A600B49FEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0E4F50528AB51AB00B49FEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D0E4F50628AB51B100B49FEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
