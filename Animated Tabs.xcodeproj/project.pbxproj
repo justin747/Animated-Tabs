@@ -17,6 +17,7 @@
 		D0E4F50028A8B4FA00B49FEF /* Notification.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FB28A8B4FA00B49FEF /* Notification.json */; };
 		D0E4F50128A8B4FA00B49FEF /* Saved.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FC28A8B4FA00B49FEF /* Saved.json */; };
 		D0E4F50228A8B4FA00B49FEF /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FD28A8B4FA00B49FEF /* Home.json */; };
+		D0E4F50828ACAFD200B49FEF /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4F50728ACAFD200B49FEF /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D0E4F4FB28A8B4FA00B49FEF /* Notification.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Notification.json; sourceTree = "<group>"; };
 		D0E4F4FC28A8B4FA00B49FEF /* Saved.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Saved.json; sourceTree = "<group>"; };
 		D0E4F4FD28A8B4FA00B49FEF /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
+		D0E4F50728ACAFD200B49FEF /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		D0E4F50428AB51A600B49FEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0E4F50728ACAFD200B49FEF /* Tab.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E4F50828ACAFD200B49FEF /* Tab.swift in Sources */,
 				D0E4F4E928A5FF3600B49FEF /* ContentView.swift in Sources */,
 				D0E4F4E728A5FF3600B49FEF /* Animated_TabsApp.swift in Sources */,
 			);
