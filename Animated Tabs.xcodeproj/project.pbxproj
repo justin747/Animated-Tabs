@@ -18,6 +18,9 @@
 		D0E4F50128A8B4FA00B49FEF /* Saved.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FC28A8B4FA00B49FEF /* Saved.json */; };
 		D0E4F50228A8B4FA00B49FEF /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E4F4FD28A8B4FA00B49FEF /* Home.json */; };
 		D0E4F50828ACAFD200B49FEF /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4F50728ACAFD200B49FEF /* Tab.swift */; };
+		D0E4F50A28ACB8DB00B49FEF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4F50928ACB8DB00B49FEF /* MainView.swift */; };
+		D0E4F50C28ACBFB600B49FEF /* AnimatedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4F50B28ACBFB600B49FEF /* AnimatedIcon.swift */; };
+		D0E4F50E28ACC19C00B49FEF /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4F50D28ACC19C00B49FEF /* ResizableLottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		D0E4F4FC28A8B4FA00B49FEF /* Saved.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Saved.json; sourceTree = "<group>"; };
 		D0E4F4FD28A8B4FA00B49FEF /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 		D0E4F50728ACAFD200B49FEF /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		D0E4F50928ACB8DB00B49FEF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D0E4F50B28ACBFB600B49FEF /* AnimatedIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIcon.swift; sourceTree = "<group>"; };
+		D0E4F50D28ACC19C00B49FEF /* ResizableLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				D0E4F50728ACAFD200B49FEF /* Tab.swift */,
+				D0E4F50B28ACBFB600B49FEF /* AnimatedIcon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +126,8 @@
 		D0E4F50628AB51B100B49FEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D0E4F50928ACB8DB00B49FEF /* MainView.swift */,
+				D0E4F50D28ACC19C00B49FEF /* ResizableLottieView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,8 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E4F50828ACAFD200B49FEF /* Tab.swift in Sources */,
+				D0E4F50A28ACB8DB00B49FEF /* MainView.swift in Sources */,
 				D0E4F4E928A5FF3600B49FEF /* ContentView.swift in Sources */,
+				D0E4F50E28ACC19C00B49FEF /* ResizableLottieView.swift in Sources */,
 				D0E4F4E728A5FF3600B49FEF /* Animated_TabsApp.swift in Sources */,
+				D0E4F50C28ACBFB600B49FEF /* AnimatedIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +356,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -352,7 +364,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Justin747.Animated-Tabs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,7 +395,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -389,7 +403,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Justin747.Animated-Tabs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

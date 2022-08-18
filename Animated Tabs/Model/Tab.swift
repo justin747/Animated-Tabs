@@ -9,10 +9,10 @@ import SwiftUI
 
 enum Tab: String,CaseIterable {
     
-    case home = "Home"
-    case chat = "Chat"
+    case home          = "Home"
+    case chat          = "Chat"
     case notifications = "Notifications"
-    case saved = "Saved"
-    case account = "Account"
+    case saved         = "Saved"
+    case account       = "Account"
     
 }
