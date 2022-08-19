@@ -13,7 +13,7 @@ struct ResizableLottieView: UIViewRepresentable {
     var lottieView: AnimationView
     var color: SwiftUI.Color = .black
     
-    func makeUIView(context: Context) -> some UIView {
+    func makeUIView(context: Context) -> UIView {
         let view = UIView()
         view.backgroundColor = .clear
         addLottieView(to: view)
@@ -22,6 +22,18 @@ struct ResizableLottieView: UIViewRepresentable {
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
         
+        if let animationView = uiView.subviews.first(where: { view in
+            view is AnimationView
+        }) as? AnimationView {
+//            lottieView.logHierarchyKeypaths()
+            
+            let lottieColor = ColorValueProvider(UIColor(color).lottieColorValue)
+            let fillKeyPath = AnimationKeypath(keys: ["**", "Fill 1", "**", "Color"])
+            animationView.setValueProvider(lottieColor, keypath: fillKeyPath)
+            
+            let strokeKeyPath = AnimationKeypath(keys: ["**", "Stroke 1", "**", "Color"])
+            animationView.setValueProvider(lottieColor, keypath: strokeKeyPath)
+        }
     }
     
     func addLottieView(to: UIView) {

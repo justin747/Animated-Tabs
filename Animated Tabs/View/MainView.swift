@@ -62,7 +62,9 @@ struct MainView: View {
     func TabBar() -> some View {
         HStack(spacing: 0) {
             ForEach(animatedIcon) { icon in
-                ResizableLottieView(lottieView: icon.lottieView)
+                
+                let tabColor: SwiftUI.Color = currentTab == icon.tabIcon ? (scheme == .dark ? .white : .black) : .gray.opacity(0.6)
+                ResizableLottieView(lottieView: icon.lottieView, color: tabColor)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 30, height: 30)
                     .frame(maxWidth: .infinity)
@@ -70,8 +72,7 @@ struct MainView: View {
                     .onTapGesture {
                         currentTab = icon.tabIcon
                         icon.lottieView.play { _ in
-                            
-                            
+                     
                         }
                     }
             }
@@ -87,7 +88,7 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        ContentView()
     }
 }
 
